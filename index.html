@@ -3,69 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crown & Chrono | Luxury Timepieces</title>
+    <title>ChronoLux | Premium B-Grade Luxury Timepieces</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">CROWN & CHRONO</div>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#about">Our Heritage</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="ChronoLux Home">ChronoLux</a>
+            <nav class="nav-menu" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About B-Grade</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section class="hero-section">
             <div class="hero-content">
-                <h1>The Oyster Perpetual</h1>
-                <p>An icon of excellence, precision, and timeless elegance.</p>
-                <a href="#collection" class="btn">Explore Collection</a>
+                <h1>Affordable Luxury</h1>
+                <p>Premium B-Grade luxury timepieces. Certified quality, minor cosmetic imperfections, unmatched value.</p>
+                <a href="#shop" class="cta-button">Browse Collection</a>
             </div>
         </section>
 
-        <section id="collection" class="products">
-            <h2>Featured Corporate Collection</h2>
+        <section id="shop" class="catalog-section">
+            <h2>Our B-Grade Collection</h2>
             <div class="product-grid">
                 <article class="product-card">
-                    <img src="images/submariner.jpg" alt="Silver luxury watch with dark blue dial">
-                    <h3>The Submariner Elegance</h3>
-                    <p>Engineered for the deep, styled for the boardroom.</p>
-                    <span class="price">$14,500 AUD</span>
+                    <div class="image-container">
+                        <img src="https://unsplash.com" alt="Gold luxury watch with black dial">
+                    </div>
+                    <h3>Submariner Gold</h3>
+                    <p class="grade-badge">B-Grade: Hairline scratch on bezel</p>
+                    <p class="price">$14,500 <span class="original-price">$38,000</span></p>
+                    <button class="buy-button">View Details</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+                        <img src="https://unsplash.com" alt="Silver luxury watch with minimalist white face">
+                    </div>
+                    <h3>Oyster Perpetual Silver</h3>
+                    <p class="grade-badge">B-Grade: Minor bracelet scuffs</p>
+                    <p class="price">$6,200 <span class="original-price">$12,500</span></p>
+                    <button class="buy-button">View Details</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="image-container">
+                        <img src="https://unsplash.com" alt="Rose gold luxury watch with complex chronograph display">
+                    </div>
+                    <h3>Daytona Rose Gold</h3>
+                    <p class="grade-badge">B-Grade: Refurbished crown mechanism</p>
+                    <p class="price">$22,000 <span class="original-price">$45,000</span></p>
+                    <button class="buy-button">View Details</button>
                 </article>
             </div>
         </section>
 
-        <section id="about" class="heritage">
-            <h2>A Legacy of Precision</h2>
-            <p>Every timepiece represents a summit of technical expertise and strict quality controls. We manage our client data with maximum compliance, ensuring secure access to digital purchase registries.</p>
-        </section>
-
-        <section id="privacy" class="cookie-policy">
-            <h2>Cookie & Privacy Notice</h2>
-            <p>In compliance with digital footprint privacy principles, this website simulates the use of essential cookies to manage secure sessions, prevent cyber security threats, and protect data entry systems from unauthorised vulnerabilities.</p>
+        <section id="about" class="info-section">
+            <div class="info-content">
+                <h2>Understanding B-Grade Luxury</h2>
+                <p>Our B-Grade luxury timepieces are 100% authentic internal mechanisms. They exhibit minor visual characteristics such as surface hairline scratches or refurbished bracelets that do not affect the internal high-precision movement. This allows you to own iconic designs at a fraction of standard retail prices.</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Crown & Chrono. All rights reserved. Designed for educational evaluation.</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 ChronoLux. All rights reserved.</p>
     </footer>
 
-    <script type="text/javascript" 
-            id="cookieinfo" 
-            src="js/cookieinfo.min.js"
-            data-bg="#0b2f1d"
-            data-fg="#ffffff"
-            data-link="#d4af37"
-            data-cookie="CrownChronoNotice"
-            data-text-align="left"
-            data-close-text="Accept">
-    </script>
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie Consent Banner">
+        <div class="cookie-content">
+            <p>We use cookies to improve your browsing experience. By clicking "Accept All", you agree to our standard cookie storage policies.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="cookie-btn accept">Accept All</button>
+                <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
